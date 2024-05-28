@@ -13,5 +13,11 @@ module.exports = defineConfig({
     specPattern: "**/*.feature",
     supportFile: 'cypress/support/e2e.js',
     setupNodeEvents,
+    baseUrl: 'https://front.serverest.dev',
+    env: {
+      TAGS: 'not @ignore',
+    },
+    video: true
   },
+
 });
